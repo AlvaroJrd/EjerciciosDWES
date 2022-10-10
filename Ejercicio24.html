@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Juego de dados</h2>
+    <label>SALDO ACTUAL: </label> <br> <br>
+    <label>Numero del 1 al 6: </label>
+    <input type="number" id="apuesta" min="1" max="6" > 
+    <input type="button" onclick="comprobar()" value="Enviar">
+
+    <script>
+        function comprobar(){
+            let apuesta = parseInt(document.getElementById('apuesta').value)
+            let rand = Math.floor(Math.random() * 6) + 1
+            alert(rand)
+           
+        }
+    </script>
+</body>
+</html>
